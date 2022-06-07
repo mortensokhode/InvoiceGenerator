@@ -1,0 +1,184 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+.mainBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0; 
+    left: 10%;
+    width: var(--mainWidth);
+    height: var(--mainHeight);
+
+
+    color: var(--mainDark);
+    background-color: var(--mainDark);
+}
+
+.topRectangle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: var(--mainWidth);
+    height: 20%;
+
+    background-color: var(--bannerBlue);
+}
+
+.topRectangle h1 {
+    position: absolute;
+
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    color: var(--crispyWhite);
+}
+
+.smallButtonFrame {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+
+    position: absolute;
+    top: 20%;
+    left: 6%;
+    height: 8%;
+    width: var(--midColumnWidth);
+
+    margin-top: 2%;
+}
+
+.tinyButton {
+    width: 142px;
+    height: 50px;
+    padding: 9px 13px;
+
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--mainDark);
+    background: var(--lightBackground);
+
+    border: 1px solid var(--lightBorder);
+    border-radius: 7px;
+}
+
+.tinyButton:hover {
+    text-shadow:1px 1px 1px var(--crispyWhite);
+}
+
+/*  --  The table 'container'    --*/
+.billofmaterials {
+    top: auto;
+    table-layout: fixed;
+    border-collapse:separate;
+
+    width: var(--midColumnWidth);
+   
+    color: var(--crispyWhite);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+thead th:nth-child(1) {
+    width: 45%;
+}
+  
+thead th:nth-child(2) {
+    width: 16%;
+}
+  
+thead th:nth-child(3) {
+    width: 34%;
+}
+
+.headingrow {
+    font-size: 14px;
+    padding: 10px 0px;
+}
+
+.footingrow {
+    font-size: 12px;
+}
+
+.thinline {
+    border-top: 2px solid var(--crispyWhite);
+}
+
+.totalamount {    
+    top:auto;
+
+    text-align: right; 
+    padding-right: 2%;
+    font-size: 24px;;
+}
+
+.tasktext, .costtext {
+    padding: 4% 0% 5% 0%;
+}
+
+.tasktext, .taskcolumn, .tasknotes {
+   text-align: left; 
+   padding-left: 10px;
+}
+
+.costtext, .costcolumn, .totalamount {
+   text-align: right; 
+   padding-right: 10px;
+}
+
+.removecolumn {    
+    text-align: center; 
+}
+
+.taskcolumn, .removecolumn, .costcolumn  {    
+    padding-bottom: 1%;
+}
+
+.bigButton {
+    position: absolute;
+    width: 90%;
+    height: 8%;
+    bottom: 10%;
+
+    font-weight: bold;
+    font-size: 22px;
+    color: var(--crispyWhite);
+    background-color: var(--bannerBlue);
+    padding: 10px 18px;
+    box-shadow: 0px 1px 2px  var(--wttDarkside);
+    border-radius: 7px;
+}
+
+.bigButton:hover {
+    text-shadow:1px 1px 2px var(--wttDarkside);
+}
+
+.material-icons {
+    top: auto;
+    font-size: 22px;
+    padding-right: 30px;
+}
+
+.deletebtn {
+    background-color: var(--mainDark);
+    color: var(--crispyWhite);
+    border-color: var(--mainDark);
+}
+
+.deletebtn:hover {
+    color: var(--lightText);
+}

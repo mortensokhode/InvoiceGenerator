@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="varDefinitions.css" rel="stylesheet" >
+        <link href="invoiceGenerator.css" rel="stylesheet" >
+    </head>
+
+    <body>
+        <div class="mainBox" id="mainbox-el">
+            <div class="topRectangle" id="toprectangle-el">
+                <h1>Invoice Creator</h1>
+            </div> <!--  topRectangle  -->
+            
+            <div class="smallButtonFrame" id="buttonframe-el">
+                <button class="tinyButton" id="carwash-btn" type="button"></button>
+                <button class="tinyButton" id="mowlawn-btn" type="button"></button>
+                <button class="tinyButton" id="pullweeds-btn" type="button"></button>
+            </div>  <!-- smallButtonFrame -->
+            
+            <table class="billofmaterials" cellspacing="0" cellpadding="0">
+                <thead class="tableheading">
+                    <tr class="headingrow">
+                        <th scope="col" class="tasktext">TASK</th>
+                        <th></th>
+                        <th scope="col" class="costtext">TOTAL</th>
+                    </tr>
+                </thead>
+
+                <tbody class="tablebody" id="tablebody-elm">
+                </tbody>
+                
+                <tfoot class="tablefooting">
+                    <tr>
+                        <td class="thinline"></td>
+                        <td class="thinline"></td>
+                        <td class="thinline"></td>
+                    </tr> 
+                    <tr class="footingrow">
+                        <td class="tasktext">NOTES</td> 
+                        <td></td>
+                        <td class="costtext">TOTAL AMOUNT</td>
+                    </tr>
+                    <tr class="footingrow">
+                        <td class="tasknotes" id="tasknotes-elm"></td> 
+                        <td></td>
+                        <td class="costtext"></td>
+                    </tr>
+                    <tr class="sumtotal_line">
+                        <td></td>
+                        <td></td>
+                        <td class="totalamount" id="totalamount-elm">$0</td>
+                    </tr>
+                </tfoot> 
+            </table> <!--  billofmaterials  -->
+
+            <button class="bigButton"  id="sendinvoice-btn" type="button" name="borderbox"><span class="material-icons">mail_outline</span>Send Invoice</button>
+            
+        </div> <!--  mainBox  -->
+        
+        <script src="invoiceGenerator.js"></script>
+    </body>
+</html>

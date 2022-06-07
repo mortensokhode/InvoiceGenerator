@@ -1,0 +1,16 @@
+:root {
+    /*  Color definitions */
+    --bannerBlue: #3A69D2;
+    --wttDarkside: #000000;
+    --crispyWhite: #ffffff;
+    --mainDark: #1F2937;
+    --lightBackground: #D1D4F4;
+    --lightText: #D1D4F4;
+    --lightBorder: #D5D4D8;
+    --bloodyRed: #b70808;
+
+    /*  Sie definitions  */
+    --mainWidth: 550px;
+    --mainHeight: 720px;
+    --midColumnWidth: 88%;
+  }
